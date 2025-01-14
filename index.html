@@ -727,17 +727,17 @@
   --primary-loader-color: var(--secondary-company-color);
   --secondary-loader-color: var(--primary-company-color);
 
---theme-value-1-de: "Alle Infos zur Creditreform Gruppe München.";
+--theme-value-1-de: "Wer ist Creditreform München? ";
 --theme-text-1-de: "Creditreform München";
---theme-value-2-de: "Wie kann mir Creditreform weiterhelfen?";
+--theme-value-2-de: "Welche Produkte und Dienstleistungen bietet Creditreform an? Wie kann mir Creditreform weiterhelfen?";
 --theme-text-2-de: "Lösungen";
---theme-value-3-de: "Was ist die Mitgliedschaft?";
+--theme-value-3-de: "Was ist die Mitgliedschaft bei Creditreform? Wie kann ich Mitglied werden? Welche Vorteile habe ich von einer Mitgliedschaft?";
 --theme-text-3-de: "Mitgliedschaft";
---theme-value-4-de: "Wer ist wofür Ansprechpartner und wie kann ich die Kollegen erreichen?";
+--theme-value-4-de: "Wer sind die Ansprechpartner bei Creditreform München und wie kann ich diese errreichen?";
 --theme-text-4-de: "Ansprechpartner";
---theme-value-5-de: "Welche Veranstaltungen werden angeboten?";
+--theme-value-5-de: "Welche Veranstaltungen werden von Creditreform München angeboten?";
 --theme-text-5-de: "Termine";
---theme-value-6-de: "Welche offenen Job-Angebote gibt es?";
+--theme-value-6-de: "Welche offenen Job-Angebote gibt es von Creditreform München?";
 --theme-text-6-de: "Karriere";
 
 --theme-value-1-en: "Please show me a current overview of my outstanding claims.";
@@ -1353,7 +1353,9 @@
         overflow: hidden;
         padding-top: 56.25%; /* 16:9-Aspect-Ratio */
     }
-    
+
+
+
     iframe {
         position: absolute;
         top: 0%;
@@ -1363,7 +1365,6 @@
         max-height: 100%;
         border: none;
     }
-
 
   
   html, body {
@@ -1521,7 +1522,9 @@
         padding-top: 56.25%; /* 16:9-Aspect-Ratio */
         z-index: 1000;
     }
-    
+
+  
+
     iframe {
         position: absolute;
         top: 0%;
@@ -4203,9 +4206,9 @@
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    width: 20px;
-    height: 20px;
-    border: 2px solid var(--tertiary-border-color);
+    width: 25px;
+    height: 25px;
+    border: 4px solid var(--tertiary-border-color);
     background-color: #fff;
     border-radius: 4px;
     outline: none;
@@ -5319,6 +5322,13 @@
 
 
 
+.highlight {
+    color: var(--secondary-company-color);
+    font-weight: bold;
+}
+
+
+
 
 #email-loader-container {
     display: none;  /* Standardmäßig ausgeblendet */
@@ -6137,7 +6147,7 @@
     <div class="title-content">
   
       <p class="custom0a-p">Hallo, ich bin Chati,</p>
-      <p class="custom0b-p">ich bin gerne für Sie da, wenn Sie Fragen haben oder Unterstützung benötigen. Aktivieren Sie die Checkbox, wählen Sie Ihre Sprache und geben Sie in das Feld unten Ihre Frage ein. Ich antworte innerhalb weniger Sekunden.</p>
+      <p class="custom0b-p">ich bin gerne für Sie da, wenn Sie Fragen haben oder Unterstützung benötigen. <span class="highlight">Aktivieren Sie die Checkbox</span>, wählen Sie Ihre Sprache und geben Sie in das Feld unten Ihre Frage ein. Ich antworte innerhalb weniger Sekunden.</p>
       <p class="custom0c-p">Chat Assistant</p>
 
 
@@ -6385,7 +6395,6 @@
         const consentGiven = this.checked;
         document.getElementById('chatbot-input').disabled = !consentGiven;
       
-
         // Video-Container sichtbar/unsichtbar machen
         const videoContainer = document.getElementById('video-container');
         if (consentGiven) {

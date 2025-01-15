@@ -6242,18 +6242,18 @@
   
   <script>
   
-      // Überwache das Kontrollkästchen und aktiviere/deaktiviere das - copyright cream5collection Stephan Vila - Eingabefeld und die Buttons je nach Zustand
-      document.getElementById('chatbot-consent-checkbox').addEventListener('change', function() {
-        const consentGiven = this.checked;
-        document.getElementById('chatbot-input').disabled = !consentGiven;
+    // Überwache das Kontrollkästchen und aktiviere/deaktiviere das - copyright cream5collection Stephan Vila - Eingabefeld und die Buttons je nach Zustand
+    document.getElementById('chatbot-consent-checkbox').addEventListener('change', function() {
+      const consentGiven = this.checked;
+      document.getElementById('chatbot-input').disabled = !consentGiven;
       
-        Video-Container sichtbar/unsichtbar machen
-        const videoContainer = document.getElementById('video-container');
-        if (consentGiven) {
-            videoContainer.style.display = 'none'; // Video-Container ausblenden
-        } else {
-            videoContainer.style.display = 'block'; // Video-Container wieder anzeigen
-        }
+    // Video-Container sichtbar/unsichtbar machen
+    const videoContainer = document.getElementById('video-container');
+    if (consentGiven) {
+        videoContainer.style.display = 'none'; // Video-Container ausblenden
+    } else {
+        videoContainer.style.display = 'block'; // Video-Container wieder anzeigen
+    }
   
 
 

@@ -6277,6 +6277,8 @@
       try {
         import('./videoToggle.js')
             .then(({ toggleVideoContainer }) => {
+                const chatbotMessages = document.getElementById('chatbot-messages');
+                chatbotMessages.classList.add('hide-message');
                 // Event Listener hinzufügen, wenn das Modul erfolgreich geladen wurde
                 document.getElementById('chatbot-consent-checkbox').addEventListener('change', function () {
                     const consentGiven = this.checked;
